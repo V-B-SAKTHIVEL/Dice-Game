@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.2s;
+}
+
+body {
+  background: linear-gradient(130deg, #be2e34, #753682);
+  height: 100vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+header h1 {
+  margin-bottom: 25px;
+  font-size: 3rem;
+  color: white;
+}
+
+.playarea {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.431);
+  max-width: 11 00px;
+  width: 80%;
+  height: 35rem;
+  margin-top: 5rem;
+  border-radius: 20px;
+  box-shadow: 1rem 0rem 100px rgba(0, 0, 0, 0.276);
+}
+
+.player {
+  width: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.playertext {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.score {
+  font-size: 3rem;
+  padding: 2rem 0;
+  margin-bottom: 5rem;
+  color: #be2e34;
+}
+
+.currentscore-cont {
+  width: 200px;
+  margin: 0 auto;
+  background-color: #c7365f;
+  padding: 20px 10px;
+  font-size: 1.3rem;
+  color: white;
+  border-radius: 20px;
+}
+
+.currentText {
+  margin-bottom: 20px;
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+
+.currentscore {
+  font-size: 2rem;
+}
+
+.diceImg {
+  position: absolute;
+  top: 30%;
+  width: 100px;
+}
+
+/*Button Style*/
+.btn {
+  padding: 10px 1.2rem;
+  font-size: 1.2rem;
+  background-color: rgba(255, 255, 255, 0.655);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: all 0.2s;
+  text-transform: uppercase;
+}
+
+.btn:active {
+  transform: translateY(10%);
+}
+.btnGame {
+  position: absolute;
+}
+#newGame {
+  top: 8%;
+}
+#rollDice {
+  top: 63%;
+}
+#holdGame {
+  top: 73%;
+}
+/*When the player is active*/
+
+.player--active {
+  background-color: rgba(255, 255, 255, 0.385);
+  border-radius: 20px;
+}
+
+/* When the player wins the game*/
+.player--winner {
+  background-color: #232323;
+  color: #c7365f;
+  border-radius: 20px;
+}
+
+/*Hidden Class*/
+.hidden {
+  display: none;
+}
+
+/*Help Window*/
+.help-window {
+  position: absolute;
+  top: 40%;
+  z-index: 10;
+  background-color: white;
+  width: 70%;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.help-window h2 {
+  color: #be2e34;
+  margin-bottom: 10px;
+}
+
+.backfilter {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.407);
+  backdrop-filter: blur(10px);
+  z-index: 5;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 2rem;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+
+.closeBtn:hover {
+  color: #be2e34;
+}
+
+.help-inst {
+  margin-left: 20px;
+  font-size: 1.2rem;
+  line-height: 1.7;
+}

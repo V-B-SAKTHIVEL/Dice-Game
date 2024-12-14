@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pig Game</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Dice Game</h1>
+
+      <div class="helpsec">
+        <button class="btn help">Help</button>
+      </div>
+    </header>
+    <div class="backfilter hidden"></div>
+    <section class="help-window hidden">
+      <h2>Help</h2>
+      <button class="closeBtn">&Cross;</button>
+      <ul class="help-inst">
+        <li>
+          Dice game is the game in which the winning is entirely based on
+          probability.
+        </li>
+        <li>
+          In this game, player 1 (you) roll the dice by clicking the button
+          'Roll Dice'.
+        </li>
+        <li>
+          The score of the dice is updated to the current score box. Click
+          'Hold' to store the score. This will finish your turn, and it's the
+          player 2's (other) turn
+        </li>
+        <li>
+          Forgetting to hold the dice score will not be added to your total
+          score.
+        </li>
+        <li>The player who scores more than 100 wins the game!</li>
+      </ul>
+    </section>
+    <main class="playarea">
+      <section class="player player--0 player--active">
+        <p class="playertext">Player 1</p>
+        <p class="score score--0">43</p>
+        <div class="currentscore-cont">
+          <p class="currentText">Current</p>
+          <p class="currentscore cscore--0">0</p>
+        </div>
+      </section>
+      <section class="player player--1">
+        <p class="playertext">Player 2</p>
+        <p class="score score--1">24</p>
+        <div class="currentscore-cont">
+          <p class="currentText">Current</p>
+          <p class="currentscore cscore--1">0</p>
+        </div>
+      </section>
+      <img class="diceImg" src="./dice-1.png" alt="" />
+      <button id="newGame" class="btn btnGame">🔁 New Game</button>
+      <button id="rollDice" class="btn btnGame">🎲 Roll Dice</button>
+      <button id="holdGame" class="btn btnGame">📥 Hold</button>
+    </main>
+  </body>
+
+  <script src="script.js"></script>
+</html>
